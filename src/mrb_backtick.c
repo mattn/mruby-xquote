@@ -17,7 +17,7 @@ mrb_backtick(mrb_state *mrb, mrb_value self) {
 
 void
 mrb_mruby_backtick_gem_init(mrb_state* mrb) {
-  mrb_define_class_method(mrb, mrb->kernel_module, "backtick", mrb_backtick, ARGS_REQ(1));
+  mrb_define_class_method(mrb, mrb->kernel_module, "`", mrb_backtick, ARGS_REQ(1));
 }
 
 void
