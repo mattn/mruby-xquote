@@ -39,7 +39,7 @@ mrb_xquote(mrb_state *mrb, mrb_value self) {
 
 void
 mrb_mruby_xquote_gem_init(mrb_state* mrb) {
-  mrb_define_class_method(mrb, mrb->kernel_module, "`", mrb_xquote, ARGS_REQ(1));
+  mrb_define_class_method(mrb, mrb->kernel_module, "`", mrb_xquote, MRB_ARGS_REQ(1));
 }
 
 void
