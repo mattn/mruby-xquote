@@ -4,7 +4,7 @@
 #include <string.h>
 #include <errno.h>
 
-#if defined(_MSC_VER) || defined(MSYSTEM)
+#ifdef _WIN32
 #define popen(x,y) _popen(x,y)
 #define pclose(x) _pclose(x)
 #endif
